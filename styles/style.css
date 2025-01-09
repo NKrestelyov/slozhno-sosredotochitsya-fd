@@ -1,5 +1,148 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  max-width: 375px;
+  background-color: #000028;
+}
+
+.body {
+  
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-image: url(../images/cover-image-dark.png);
+  background-size: cover;
+  background-position: center;
+  height: 668px;
+  padding: 10px 0px 0px 0px;
+}
+
+.decorative_rec {
+  font-family: 'IBM Plex Mono regular', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: end;
+  color: #FF0070;
+  text-transform: uppercase;
+}
+
+.header__theme-menu-list {
+  text-align: end;
+  list-style-type: none;
+  margin-top: 39px;
+  margin-right: 18px;
+}
+
+.header__theme-menu-button {
+  font-family: 'IBM Plex Mono regular', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  outline: none;
+  border: 0;
+  background: transparent;
+  margin-bottom: 11.5px;
+  color: #FF0070;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button:hover {
+  opacity: 1px;
+}
+
+.header__title {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 116px;
+  font-weight: 700;
+  line-height: 95.7px;
+  color: #DB00FF;
+  text-shadow: 4px 4px #FF0070;
+  justify-items: center;
+  margin:  0 0 0 10px;
+}
+
+.header__description {
+  display: block;
+  width: 355px;
+  height: 117px;
+  margin-left: 10px;
+  background-color: #FF0070;
+  font-family: 'IBM Plex Mono bold', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  color: #000028;
+  margin-bottom: 35px;
+}
+
+.main {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.section__title {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  color: #FF0070;
+}
+
+.section__subtitle {
+  font-family: 'IBM Plex Mono regular', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  color: #000028;
+  display: block;
+  background-color: #FF0070;
+}
+
+.section__text {
+  font-family: 'IBM Plex Mono regular', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  color: #F1B2CE;
+}
+
+.gallery__title {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  color: #000028;
+  display: block;
+  background-color: #FF0070;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.footer {
+  width: 375px;
+  height: 667px;
+}
+
+.footer__title {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 116px;
+  font-weight: 700;
+  line-height: 95.7px;
+  color: #DB00FF;
+  text-shadow: 4px 4px #FF0070;
+  justify-items: center;
+  margin-top: 326px;
+  margin-left: 10px
 }
