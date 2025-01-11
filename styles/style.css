@@ -1,6 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  display: block;
   max-width: 375px;
   background-color: #000028;
 }
@@ -15,18 +16,55 @@
   background-image: url(../images/cover-image-dark.png);
   background-size: cover;
   background-position: center;
-  height: 668px;
+  min-height: 658px;
   padding: 10px 0px 0px 0px;
+  position: relative;
 }
 
-.decorative_rec {
+.rec-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 19px;
+  gap: 10px;
+}
+
+.rec-text {
   font-family: 'IBM Plex Mono regular', sans-serif;
+  color: #FF0070;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
-  text-align: end;
-  color: #FF0070;
-  text-transform: uppercase;
+}
+
+.rec-indicator {
+  width: 9px; 
+  height: 9px;
+  background-color: #FF0070; 
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px #FF0070; 
+}
+
+.rec-frame-top {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px; 
+  height: 25px;
+  border-width: 1px 1px 0px 0px;
+  border-style: solid;
+  border-color: #FF0070;  
+}
+
+.rec-frame-bottom {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 25px; 
+  height: 25px;
+  border-width: 0px 0px 1px 1px;
+  border-style: solid;
+  border-color: #FF0070;  
 }
 
 .header__theme-menu-list {
@@ -74,7 +112,7 @@
   font-weight: 700;
   line-height: 23.4px;
   color: #000028;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .main {
@@ -88,6 +126,7 @@
   font-weight: 700;
   line-height: 23.4px;
   color: #FF0070;
+  margin-top: 40px;
 }
 
 .section__subtitle {
@@ -98,6 +137,7 @@
   color: #000028;
   display: block;
   background-color: #FF0070;
+  margin-top: 10px;
 }
 
 .section__text {
@@ -131,8 +171,13 @@
 }
 
 .footer {
-  width: 375px;
-  height: 667px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-width: 375px;
+  min-height: 667px;
+  margin-top: 40px;
 }
 
 .footer__title {
@@ -142,7 +187,5 @@
   line-height: 95.7px;
   color: #DB00FF;
   text-shadow: 4px 4px #FF0070;
-  justify-items: center;
-  margin-top: 326px;
   margin-left: 10px
 }
